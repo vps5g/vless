@@ -1,44 +1,29 @@
-# V2Ray Heroku
-
-** Để triển khai V2Ray VLESS, vui lòng truy cập chi nhánh [vless](https://github.com/bclswl0827/v2ray-heroku/tree/vless). **
-
-## Tổng quat
-
+VLESS Heroku
+Tổng quat
 Dự án này được sử dụng để triển khai V2Ray WebSocket trên Heroku, trong phạm vi sử dụng hợp lý, hình ảnh này sẽ không bị chặn do lượng tài nguyên lớn.
 
-Sau khi triển khai, mỗi khi bạn khởi động ứng dụng, V2Ray đang chạy sẽ luôn là phiên bản mới nhất
+Sau khi triển khai, mỗi khi bạn khởi động ứng dụng, V2Ray đang chạy sẽ luôn là phiên bản mới nhất.
 
-## Triển khai
+triển khai
+bươc chân
+Chuyển dự án này vào tài khoản GitHub của bạn (lấy ví dụ làm ví dụ)
+Sửa đổi tên dự án và cẩn thận không bao gồm các từ khóa v2ray và heroku (tên dự án đã sửa đổi sử dụng bản trình diễn làm ví dụ)
+Sửa đổi README.md và thay thế bclswl0827 / v2ray-heroku bằng nội dung của riêng bạn (chẳng hạn như ví dụ / bản trình diễn)
+Triển khai
 
-### Bươc chân
-
- 1. Chuyển dự án này vào tài khoản GitHub của bạn (sử dụng `example` làm ví dụ)
- 2. Sửa đổi tên dự án, hãy cẩn thận không bao gồm các từ khóa `v2ray` và` heroku` (tên dự án đã sửa đổi sử dụng `demo` làm ví dụ)
- 3. Sửa đổi `README.md`, thay thế` bclswl0827 / v2ray-heroku` bằng nội dung của riêng bạn (chẳng hạn như `example / demo`)
-
-> [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/vps5g/vmess)
-
- 4. Quay lại trang chủ của dự án, nhấp vào liên kết ở trên để triển khai V2Ray
-
-### Biến
-
+Quay lại trang chủ dự án, nhấp vào liên kết ở trên để triển khai V2Ray
+Biến đổi
 Các tên biến cần được đặt trong quá trình triển khai được giải thích như sau.
 
-| Biến | Giá trị mặc định | Mô tả |
-|: --- |: --- |: --- |
-| `ID` |` ad806487-2d26-4636-98b6-ab85cc8521f7` | ID chính của người dùng VMess, được sử dụng để xác thực, ở định dạng UUID |
-| `AID` |` 64` | Để ngăn chặn việc phát hiện thêm, hãy đặt một ID bổ sung, cụ thể là AlterID, nằm trong khoảng từ 0 đến 65535 |
-| `WSPATH` |` / `| Đường dẫn giao thức HTTP được WebSocket sử dụng |
-
-## Truy cập CloudFlare
-
+Mô tả giá trị mặc định của biến
+ID ad806487-2d26-4636-98b6-ab85cc8521f7 ID người dùng VLESS, được sử dụng để xác thực, ở định dạng UUID
+Đường dẫn giao thức WSPATH / HTTP được WebSocket sử dụng
+Kết nối với CloudFlare
 Hai phương pháp sau có thể kết nối ứng dụng với CloudFlare, từ đó tăng tốc độ ở một mức độ nhất định.
 
- 1. Liên kết tên miền với ứng dụng và kết nối tên miền với CloudFlare
- 2. Reverse proxy thông qua CloudFlare worker
-
-## Lưu ý
-
- 1. ** Xin đừng lạm dụng dự án này, có rất ít dịch vụ miễn phí như Heroku, và hãy sử dụng nó và trân trọng nó **
- 2. Nếu bạn sử dụng tên miền để truy cập CloudFlare, vui lòng xem xét bật TLS 1.3
- 3. Hầu hết các địa chỉ AWS IPv4 đã bị Twitter chặn
+Liên kết tên miền với ứng dụng và kết nối tên miền với CloudFlare
+Reverse proxy qua CloudFlare worker
+Lưu ý
+Vui lòng không lạm dụng dự án này, các dịch vụ miễn phí như Heroku rất hiếm, hãy sử dụng và trân trọng
+Nếu bạn sử dụng tên miền để kết nối với CloudFlare, vui lòng xem xét bật TLS 1.3
+Hầu hết các địa chỉ AWS IPv4 đã bị Twitter chặn
