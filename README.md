@@ -1,6 +1,6 @@
 # V2Ray Heroku
 
-** Để triển khai V2Ray VLESS, vui lòng truy cập chi nhánh [vless] (https://github.com/bclswl0827/v2ray-heroku/tree/vless). **
+** Để triển khai V2Ray VLESS, vui lòng truy cập chi nhánh [vless](https://github.com/bclswl0827/v2ray-heroku/tree/vless). **
 
 ## Tổng quat
 
@@ -16,7 +16,7 @@ Sau khi triển khai, mỗi khi bạn khởi động ứng dụng, V2Ray đang c
  2. Sửa đổi tên dự án, hãy cẩn thận không bao gồm các từ khóa `v2ray` và` heroku` (tên dự án đã sửa đổi sử dụng `demo` làm ví dụ)
  3. Sửa đổi `README.md`, thay thế` bclswl0827 / v2ray-heroku` bằng nội dung của riêng bạn (chẳng hạn như `example / demo`)
 
-> [! [Triển khai] (https://www.herokucdn.com/deploy/button.png)] (https://dashboard.heroku.com/new?template=https://github.com/vps5g/vless )
+> [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/vps5g/vmess)
 
  4. Quay lại trang chủ của dự án, nhấp vào liên kết ở trên để triển khai V2Ray
 
